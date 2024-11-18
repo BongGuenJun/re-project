@@ -1,5 +1,7 @@
 $(function(){
 	
+	$("#writeForm").on("submit", function(){
+		
 		$("#detailDelete").on("click", function(){
 		let pass=$("#pass").val();
 		if(pass.length <= 0){
@@ -11,8 +13,6 @@ $(function(){
 		$("#checkForm").attr("method","post");
 		$("#checkForm").submit();
 		});
-	$("#writeForm").on("submit", function(){
-		
 		
 		if($("#writer").val().length <=0){
 			alert("작성자가 입력되지 않았습니다.\n 작성자를 입력해주세요");
@@ -62,7 +62,7 @@ $(function(){
 			$("#writer").focus();
 			return false;
 		}
-		if($("#title").val().length <= 0) {
+		if($("title").val().length <= 0) {
 			alert("제목이 입력되지 않았습니다.\n제목을 입력해주세요");
 			$("#title").focus();
 			return false;

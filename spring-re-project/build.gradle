@@ -35,8 +35,6 @@ dependencies {
 	testImplementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter-test:3.0.3'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 	implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect'
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.springframework.boot:spring-boot-starter-security'
 	/*레이아웃을 사용하기 위한*/
 }
 
